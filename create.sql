@@ -1,3 +1,5 @@
+PRAGMA foreign_keys = ON;
+
 CREATE TABLE publisher(
 	id integer primary key,
 	name text,

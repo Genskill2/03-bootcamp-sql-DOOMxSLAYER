@@ -1,2 +1,2 @@
-delete from books_subjects bs,subjects s where bs.subject=s.name and s.name="History";
+delete from books_subjects bs where bs.subject=subjects.name and subjects.name="History";
 delete from subjects where name="History";

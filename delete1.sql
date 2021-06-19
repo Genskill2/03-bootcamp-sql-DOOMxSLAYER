@@ -1,2 +1,2 @@
-delete from books_subjects where exists (select b.subject from books_subjects b, subjects s where s.name="History" and s.id=b.book);
+delete from books_subjects where books_subjects.subject=(select id from subjects where name="History");
 delete from subjects where name="History";

@@ -1,1 +1,1 @@
-select b.title from books_subjects bs, books b where bs.subject="Technoliogy" or bs.subject="Politics" and bs.book=b.id;
+select b.title from books b, books_subjects p, subjects s where s.name in ('Technology','Politics') and s.id=p.subject and p.book=b.id;

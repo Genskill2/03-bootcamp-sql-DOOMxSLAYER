@@ -1,1 +1,1 @@
-select subject from books_subjects where name="Atomic Habits";
+select subject from books_subjects where book="Atomic Habits";
